@@ -1,0 +1,28 @@
+{% extends 'layouts/layout.html' %} 
+
+{% block titleTab %} 
+    {{ titleTab }}
+{%endblock %} 
+
+{% block titleName %}
+    <h1>{{ titleName }} <h1>
+{% endblock  %}
+
+{% block content %}
+    <div class="container pt-5 pb-5 text-center" id="containerIndex">
+        <div class="row">
+            <div class="col">
+                <!--<a class="button buttonQA" href="{% url 'tester' %}">I brake code QA</a>-->
+                <a type="button" class="btn btn-outline-warning" href="{% url 'tester' %}">
+                    I brake code QA
+                </a>
+            </div>
+            <div class="col">
+                <!--<a class="button buttonDev" href="{% url 'developer' %}">I made code Dev</a>-->
+                <a type="button" class="btn btn-outline-success" href="{% url 'developer' %}">
+                    I made code Dev
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

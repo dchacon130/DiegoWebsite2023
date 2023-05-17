@@ -1,0 +1,40 @@
+{% extends 'layouts/layout.html' %} 
+
+{% block titleTab %} 
+    {{ titleTab }}
+{%endblock %} 
+
+{% block titleName %}
+    <h1>{{ titleName }}</h1>
+{% endblock  %}
+
+{% block content %}
+    <div class="div mt-5 mb-5">
+        <h1 class="pt-2 pl-1">Hello, I see that you are interested in my knowledge as QA...</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="mt-5 imgTester" src="/static/img/FacebookProfile.png" alt="QA Working!!!"> 
+            </div>
+            <div class="col-md-9 text-justify text-monospace mt-5" >
+                <p>
+                    In my experience it has allowed me to develop skills in problem identification, improvement implementation and project management. In addition, I am a methodical, analytical and results-focused person. I am capable of teamwork and have a strong commitment to excellence and customer satisfaction. My goal is to contribute to the success of the company through my experience and skills in quality analysis.
+                    <br><br>
+                    I have extensive technical knowledge in the area of QA, including the design and execution of functional tests, the creation of test cases, the automation of tests and the management of defects in tracking tools.
+                    <br><br>
+                    In addition, I have experience implementing test processes and conducting risk analysis and impact assessment. My technical skills also include working with programming languages like JavaScript and Python, as well as using automation tools like Selenium and JMeter. I am always constantly learning and updating my knowledge, in order to offer quality solutions to the projects in which I participate. 
+                    <br><br>
+                    More information in the option 
+                    <a type="button" class="btn btn-info btn-sm btnExperience" href="{% url 'knowledgeQa' %}">Knoledge</a>
+                </p>
+                
+            </div>
+        </div>
+        
+        <div class="font-italic text-center">
+            <a class="pr-3 icon" href="https://www.linkedin.com/in/dchacon130/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="pr-3 icon" href="https://github.com/dchacon130/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="pr-3 icon" href="https://twitter.com/DiegoChacon20" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a class="pr-3 icon" href="https://www.instagram.com/dchacon130/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+{% endblock %}

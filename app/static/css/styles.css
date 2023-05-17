@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: #EFEEEF;
+}
+
+#name {
+    height: 50px;
+    width: 30%;
+    float: left;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: #000000;
+    border-style: none;
+}
+
+.subtitle {
+    color: darkgray;
+}
+
+.helloh2 {
+    padding: 160px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+p {
+    padding: 15px;
+}
+
+nav {
+    height: 50px;
+    width: 30%;
+    float: right;
+    padding: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    color: #000000;
+    border-style: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #732800;
+    color: #EFEEEF;
+}
+
+#header {
+    height: 90px;
+    width: 100%;
+    border-style: none;
+}
+
+#content {
+    height: 750px;
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 15%;
+    background-color: #EFEEEF;
+    border-style: none;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+        transform: rotate(50deg);
+        transform: rotate(-50deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#footer {
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: center;
+    border-style: none;
+}
+
+#containerIndex {
+    height: 550px;
+    width: 100%;
+}
+
+.card {
+    background: #EFEEEF;
+}
+
+.icon {
+    size: 150px;
+    color: #000000;
+}
+
+.icon:hover {
+    background-color: #EFEEEF;
+    color: #732800;
+}
+
+.imgTester {
+    width: 100%;
+    height: 220px;
+}
+
+.btnExperience {
+    border-radius: 5px;
+    color: #000000;
+    border-color: #000000;
+    background-color: #EFEEEF;
+}
+
+.btnExperience:hover {
+    border-radius: 5px;
+    color: #EFEEEF;
+    border-color: #EFEEEF;
+    background-color: #732800;
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar-animated {
+    animation: progress-animation 2s linear infinite;
+}

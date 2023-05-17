@@ -1,0 +1,86 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% block titleTab %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'js/script.js'%}" type="text/css" />
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/e3b8a7723e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="row pt-5 pb-1">
+        <div class="col-md-6 pt-3 text-center">
+          <div class="text-center">
+            {% block titleName %}{% endblock %}
+          </div>
+          <div class="text-muted text-center">
+            <p>Doing stuff on the web since 2009.</p>
+          </div>
+        </div>
+        <nav class="col-md-6 pt-3">
+          <ul class="nav justify-content-end">
+            {% if GLOBAL_VAR_QA %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'expQA' %}">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'knowledgeQa' %}">Knowledge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact me</a>
+            </li>
+            {% endif %}
+            {% if GLOBAL_VAR_DEV %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'aboutDev' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'projectsDev' %}">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact me</a>
+            </li>
+            {% endif %}
+          </ul>
+        </nav>
+      </header>
+
+      <section class="container">
+        <article>
+          {% block content %}
+          <!-- Codigo que viene de templates -->
+          {% endblock %}
+        </article>
+      </section>
+      
+      <footer class="container-fluid pt-1 pb-5 text-center">
+        Made with <i class="fas fa-coffee"></i> By Diego Chacon &copy; 2023
+      </footer>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    {% bootstrap_javascript jquery='full' %}
+  </body>
+</html>
