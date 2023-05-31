@@ -32,32 +32,32 @@
         <nav class="col-md-6 pt-3">
           <ul class="nav justify-content-end">
             {% if GLOBAL_VAR_QA %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'expQA' %}">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'knowledgeQa' %}">Knowledge</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'knowledge' %}">Knowledge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact me</a>
+              </li>
             {% endif %}
             {% if GLOBAL_VAR_DEV %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'aboutDev' %}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'projectsDev' %}">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'knowledgeDev' %}">Knowledge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact me</a>
+              </li>
             {% endif %}
           </ul>
         </nav>
@@ -72,6 +72,13 @@
       </section>
       
       <footer class="container-fluid pt-1 pb-5 text-center">
+        <div class="font-italic text-center">
+          <a class="pr-3 icon" href="https://www.linkedin.com/in/dchacon130/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="pr-3 icon" href="https://github.com/dchacon130/" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="pr-3 icon" href="https://twitter.com/DiegoChacon20" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a class="pr-3 icon" href="https://www.instagram.com/dchacon130/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <br>
         Made with <i class="fas fa-coffee"></i> By Diego Chacon &copy; 2023
       </footer>
     </div>

@@ -9,5 +9,23 @@
 {% endblock  %}
 
 {% block content %}
-    
+    <div class="div mt-5 mb-5">
+        <h1 class="pt-2 pl-1">Hello, I see that you are interested in my knowledge as DEV...</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="mt-5 imgTester" src="/static/img/FacebookProfile.png" alt="QA Working!!!"> 
+            </div>
+            <div class="col-md-9 text-justify text-monospace mt-5" >
+                <p>
+                    Hello, my name is Diego Chacon and I am a Python developer with 2 years of experience. During this time, I have worked on challenging projects that have allowed me to acquire a solid knowledge in developing applications and solutions using the Python language. <br>
+                    I have experience in web application development, data analysis, and task automation. I am passionate about programming and I am always looking to learn new technologies and improve my skills. <br>
+                    I consider myself a committed team player capable of working both independently and collaboratively. I am excited to be part of challenging projects and contribute my Python expertise
+                    <br><br>
+                    More information in the option 
+                    <a type="button" class="btn btn-info btn-sm btnExperience" href="{% url 'knowledgeDev' %}">Knoledge</a>
+                </p>
+                
+            </div>
+        </div>    
+    </div>
 {% endblock %}

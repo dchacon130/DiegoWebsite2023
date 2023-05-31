@@ -14,7 +14,8 @@ def developer(request):
     context = {
         'titleTab': '.: Diego Developer :.',
         'titleName':'Diego Chacon Developer',
-        'GLOBAL_VAR_DEV': True
+        'GLOBAL_VAR_QA': False,
+        'GLOBAL_VAR_DEV': True,
     }
     return render(request, 'app/developer.html', context)
 
@@ -23,30 +24,45 @@ def tester(request):
         'titleTab': '.: Diego Tester :.',
         'titleName':'Diego Chacon Tester',
         'GLOBAL_VAR_QA': True,
+        'GLOBAL_VAR_DEV': False,
     }
     return render(request, 'app/tester.html', context)
 
-
-def expQA(request):
+def knowledge(request):
     context = {
         'titleTab': '.: Diego Tester :.',
         'titleName':'Diego Chacon Tester',
         'GLOBAL_VAR_QA': True,
+        'GLOBAL_VAR_DEV': False,
     }
-    return render(request, 'app/expQA.html', context)
+    return render(request, 'app/knowledge.html', context)
 
-def knowledgeQa(request):
+def experience(request):
     context = {
         'titleTab': '.: Diego Tester :.',
         'titleName':'Diego Chacon Tester',
         'GLOBAL_VAR_QA': True,
+        'GLOBAL_VAR_DEV': False,
     }
-    return render(request, 'app/knowledgeQA.html', context)
+    return render(request, 'app/experience.html', context)
 
-def aboutDev(request):
-    
-    return render(request, 'app/aboutDEV.html')
+def knowledgeDev(request):
+    context = {
+        'titleTab': '.: Diego Tester :.',
+        'titleName':'Diego Chacon Tester',
+        'GLOBAL_VAR_QA': False,
+        'GLOBAL_VAR_DEV': True,
+    }
+    return render(request, 'app/knowledgeDev.html', context)
 
-def projectsDev(request):
-    
-    return render(request, 'app/projectsDEV.html')
+def experienceDev(request):
+    context = {
+        'titleTab': '.: Diego Tester :.',
+        'titleName':'Diego Chacon Tester',
+        'GLOBAL_VAR_QA': False,
+        'GLOBAL_VAR_DEV': True,
+    }
+    return render(request, 'app/experienceDev.html', context)
+
+
+

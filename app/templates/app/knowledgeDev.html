@@ -1,0 +1,144 @@
+{% extends 'layouts/layout.html' %} 
+
+{% block titleTab %} 
+    {{ titleTab }}
+{%endblock %} 
+
+{% block titleName %}
+    <h1>{{ titleName }}</h1>
+{% endblock  %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Program Languages</h1>
+            <h5 class="mt-3">Python<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style=" width:75%; height:30px ">75%</div>
+            </div>
+            <h5 class="mt-3">JavaScript<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            <h5 class="mt-3">Java<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%; height:30px ">45%</div>
+            </div>
+            <h5 class="mt-3">C#<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%; height:30px ">45%</div>
+            </div>
+        </div>
+        <div class="col">
+            <h1>Frameworks y libraries</h1>
+            <h5 class="mt-3">Django<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%; height:30px ">75%</div>
+            </div>
+            <h5 class="mt-3">Flask<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%; height:30px ">75%</div>
+            </div>
+            <h5 class="mt-3">Angular<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            <h5 class="mt-3">Laravel<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%; height:30px ">45%</div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <h1>Design and arquitecture</h1>
+            <h5 class="mt-3">MVC <h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%; height:30px ">75%</div>
+            </div>
+            <h5 class="mt-3">RESTful<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            <h1>SO</h1>
+            <h5 class="mt-3">Windows<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 88%; height:30px ">88%</div>
+            </div>
+            <h5 class="mt-3">Linux<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 66%; height:30px ">66%</div>
+            </div>
+        </div>
+        <div class="col">
+            <h1>Project Management</h1>
+            <h5 class="mt-3">Azure DevOps<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:30px ">80%</div>
+            </div>
+            <h5 class="mt-3">Jira<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%; height:30px ">75%</div>
+            </div>
+            <h1>Tools and technologies</h1>
+            <h5 class="mt-3">Docker<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            <h5 class="mt-3">AWS<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%; height:30px ">45%</div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        
+    </div>
+    <div class="row  mt-5">
+        <div class="col">
+            <h1>CI & CD</h1>
+            <h5 class="mt-3">GitHub<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            <h1 class=" mt-5">SQL</h1>
+            <h5 class="mt-3">MySql<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:30px ">80%</div>
+            </div>
+            <h5 class="mt-3">SQL Server<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height:30px ">80%</div>
+            </div>
+            <h5 class="mt-3">PostgreSQL<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%; height:30px ">65%</div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col">
+            <h1>Development Life Cycle Models</h1>
+            <h5 class="mt-3">Agile Model<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 99%; height:30px ">85%</div>
+            </div>
+            <h5 class="mt-3">Waterfall Mode<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 99%; height:30px ">90%</div>
+            </div>
+        </div>
+        <div class="col">
+            <h1>API</h1>
+            <h5 class="mt-3">Postman<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 76%; height:30px ">76%</div>
+            </div>
+            <h5 class="mt-3">SoapUI<h5>
+            <div class="progress border progress-bar-animated" style="height:30px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%; height:30px ">65%</div>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}

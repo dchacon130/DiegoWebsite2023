@@ -1,0 +1,187 @@
+{% extends 'layouts/layout.html' %} 
+
+{% block titleTab %} 
+        {{ titleTab }}
+{%endblock %} 
+
+{% block titleName %}
+    <h1>{{ titleName }}</h1>
+{% endblock  %}
+
+{% block content %}
+<!-- Codigo que viene de templates -->
+    {% if GLOBAL_VAR_QA %}
+        
+        <div class="text-center ml-5 pl-5">
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="pb-5">Jobs & Description</h1>
+                    <div class="accordion" id="venon">
+                        <div class="card">
+                            <div class="card-header" id="headingV">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseV" aria-expanded="true" aria-controls="collapseV">
+                                    Sr Quality/Automation Engineer | 2022-2023 <br>
+                                    Venon solutions, La Plata, Argentina <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseV" class="collapse" aria-labelledby="headingV" data-parent="#venon">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="cticonsulting">
+                        <div class="card">
+                            <div class="card-header" id="headingcti">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseCti" aria-expanded="true" aria-controls="collapseCti">
+                                    Sr Quality/Automation Engineer | 2020-2022 <br>
+                                    CTI Consulting, Florida, United States <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseCti" class="collapse" aria-labelledby="headingcti" data-parent="#cticonsulting">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="datatools">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Sr Quality Engineer | 2018 - 2023 <br>
+                                    Speeron, Stockholm, Sweeden <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#datatools">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="qvision">
+                        <div class="card">
+                            <div class="card-header" id="headingIg">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseIg" aria-expanded="true" aria-controls="collapseIg">
+                                    Sr Quality Engineer | 2015 - 2018<br>
+                                    Intergrupo, Bogota, Colombia <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseIg" class="collapse" aria-labelledby="headingIg" data-parent="#qvision">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="intergrupo">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Intermediate Quality Engineer | 2014 - 2015<br>
+                                    Q-vision, Bogota, Colombia <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#intergrupo">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="qvision">
+                        <div class="card">
+                            <div class="card-header" id="headingQ">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseQ" aria-expanded="true" aria-controls="collapseQ">
+                                    Software Development | 2012 - 2014<br>
+                                    BolColombia, Bogota, Colombia <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseQ" class="collapse" aria-labelledby="headingQ" data-parent="#qvision">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion" id="bol">
+                        <div class="card">
+                            <div class="card-header" id="headingBol">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseBol" aria-expanded="true" aria-controls="collapseBol">
+                                    Junior Quality Engineer | 2010 - 2012<br>
+                                    Data-tools, Bogota, Colombia <br>
+                                    <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseBol" class="collapse" aria-labelledby="headingBol" data-parent="#bol">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1 pb-5">
+                    <div class="big-column ml-4 border"></div>
+                </div>
+
+
+                <div class="col-6 text-left">
+                    <h1 class="pb-5">Studies & certifications</h1>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2023 | Cypress 9 Fundamentals, E2E Angular Testing with Cypress</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2022 | Master en JavaScript: Aprende JS, JQuery, Angular, NodeJS</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2021 | Master Python: Python 3, Django, Flask & Tkinter</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2020 | Automate your browser Selenium WebDriver with Python</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2019 | RPA with UiPad</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2017 | Software Development Engineer</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2016 | Scrum Master</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2012 | Certified Tester Foundation Level (CTFL)</div>
+                    <br>
+                    <div class="column-space p-4 mt-4"><i class="fa-solid fa-arrow-right-long"></i>2005 | High School</div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+    
+
+
+
+

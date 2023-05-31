@@ -152,7 +152,8 @@ nav a:hover {
 }
 
 .progress-bar {
-    transition: width 0.5s ease-in-out;
+    transition: width 10s ease-in-out;
+    cursor: grab;
 }
 
 @keyframes progress-animation {
@@ -166,5 +167,16 @@ nav a:hover {
 }
 
 .progress-bar-animated {
-    animation: progress-animation 2s linear infinite;
+    animation: progress-animation 5s;
+}
+
+.big-column {
+    width: 10%;
+    height: 950px;
+    background-color: #000000;
+}
+
+.column-space {
+    width: 90%;
+    height: 20px;
 }

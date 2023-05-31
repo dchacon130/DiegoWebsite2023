@@ -1,7 +1,7 @@
 {% extends 'layouts/layout.html' %} 
 
 {% block titleTab %} 
-    {{ titleTab }}
+        {{ titleTab }}
 {%endblock %} 
 
 {% block titleName %}
@@ -9,5 +9,14 @@
 {% endblock  %}
 
 {% block content %}
-    <h1>Experience</h1>
+<!-- Codigo que viene de templates -->
+    {% if GLOBAL_VAR_QA %}
+        <h1>Experience Dev</h1>
+    {% endif %}
+
 {% endblock %}
+    
+
+
+
+
